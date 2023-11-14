@@ -7,11 +7,11 @@ class Persona:
     def set_nombre(self, new_nombre):
         self._nombre = new_nombre
 
-yumi = Persona("Manuel",21)
+ramirez = Persona("Manuel",21)
 
-nombre = yumi.get_nombre()
+nombre = ramirez.get_nombre()
 print(nombre)
-yumi.set_nombre("Manolo")
+ramirez.set_nombre("Manolo")
 
-nombre = yumi.get_nombre()
+nombre = ramirez.get_nombre()
 print(nombre)

@@ -15,16 +15,16 @@ class Persona:
     def nombre(self):
         del self._nombre
         
-yumi = Persona("Manuel",21)
+ramirez = Persona("Manuel",21)
 
-nombre = yumi.nombre
+nombre = ramirez.nombre
 print(nombre)
 
-yumi.nombre = "Pepe"
+ramirez.nombre = "Pepe"
 
-nombre = yumi.nombre
+nombre = ramirez.nombre
 print(nombre)
 
-del yumi.nombre
+del ramirez.nombre
 
 print("Hola Mundo, estoy aprendiendo Python")
