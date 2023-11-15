@@ -1,4 +1,4 @@
-class Personaje():
+class Personaje:
     def __init__(self, nombre, fuerza, velocidad):
         self.nombre = nombre
         self.fuerza = fuerza
@@ -51,7 +51,7 @@ while True:
             if 1 <= num_pj1 <= len(personajes) and 1 <= num_pj2 <= len(personajes) and num_pj1 != num_pj2:
                 personaje1 = personajes[num_pj1 - 1]
                 personaje2 = personajes[num_pj2 - 1]
-                personaje_fusionado = personaje1.fusionar(personaje2)
+                personaje_fusionado = personaje1.__add__(personaje2)
                 personajes.append(personaje_fusionado)
                 print(f"Fusión exitosa! El nuevo personaje es {personaje_fusionado}")
             else:
@@ -68,3 +68,4 @@ while True:
 
 while True:
     input("Juego Terminado")
+    break
