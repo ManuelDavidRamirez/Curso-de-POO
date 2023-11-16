@@ -1,24 +1,26 @@
 # SRP (single responsability principle) o Principio de responsabilidad única
+# Cada clase debe tener una única responsabilidad.
+# Si se exige mas de una responsabilidad se deberá crear y separar en distintas clases.
 
 # NO cumple con el SRP
 
-# class Auto():
-#     def __init__(self):
-#         self.posicion = 0
-#         self.combustible = 100
+class Auto():
+    def __init__(self):
+        self.posicion = 0
+        self.combustible = 100
 
-#     def mover(self, distancia):
-#         if self.combustible >= distancia / 2:
-#             self.posicion += distancia
-#             self.combustible -= distancia /2
-#         else:
-#             print("No hay suficiente combustible")
+    def mover(self, distancia):
+        if self.combustible >= distancia / 2:
+            self.posicion += distancia
+            self.combustible -= distancia /2
+        else:
+            print("No hay suficiente combustible")
 
-#     def agregar_combustible(self, cantidad):
-#         self.combustible += cantidad
+    def agregar_combustible(self, cantidad):
+        self.combustible += cantidad
 
-#     def obtener_combustible(self):
-#         return self.combustible
+    def obtener_combustible(self):
+        return self.combustible
 
 # SI cumple con el SRP
 
